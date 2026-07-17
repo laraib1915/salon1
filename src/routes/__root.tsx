@@ -88,10 +88,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Bridal makeup, hydra facials, keratin and more. A women-owned signature salon in Okara, trusted by hundreds of clients.",
+          "Anam Ismail Signature Salon in Okara — bridal makeup, hydra facials, keratin treatments and expert hair care. 4.8★ rated by 387+ happy clients.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Anam Ismail Signature Salon — Premium Beauty Salon in Okara" },
+      { name: "twitter:description", content: "Anam Ismail Signature Salon in Okara — bridal makeup, hydra facials, keratin treatments and expert hair care. 4.8★ rated by 387+ happy clients." },
+      { property: "og:image", content: "https://id-preview--d6ae0f2a-4885-4793-a91c-a372c4f88edd.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--d6ae0f2a-4885-4793-a91c-a372c4f88edd.lovable.app/og-image.jpg" },
     ],
     links: [
       {
