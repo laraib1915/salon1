@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "npx nitro build --preset vercel",
+    "build:client": "vite build",
     "build:dev": "vite build --mode development",
-    "preview": "vite preview",
+    "preview": "npx nitro preview --host 0.0.0.0 --port 4173",
+    "start": "npm run preview",
+    "vercel-build": "npm run build",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
