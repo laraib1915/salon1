@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Anam Ismail Signature Salon — Premium Beauty Salon in Okara" },
+      {
+        name: "description",
+        content:
+          "Anam Ismail Signature Salon in Okara — bridal makeup, hydra facials, keratin treatments and expert hair care. 4.8★ rated by 387+ happy clients.",
+      },
+      { name: "author", content: "Anam Ismail Signature Salon" },
+      { property: "og:title", content: "Anam Ismail Signature Salon — Premium Beauty Salon in Okara" },
+      {
+        property: "og:description",
+        content:
+          "Bridal makeup, hydra facials, keratin and more. A women-owned signature salon in Okara, trusted by hundreds of clients.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -92,6 +99,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
