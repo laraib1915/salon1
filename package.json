@@ -9,6 +9,7 @@
     "build:client": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "npx nitro preview --host 0.0.0.0 --port 4173",
+    "preview:vercel": "npx srvx --static .vercel/output/static .vercel/output/functions/__server.func/index.mjs --port 4174",
     "start": "npm run preview",
     "vercel-build": "npm run build",
     "lint": "eslint .",
